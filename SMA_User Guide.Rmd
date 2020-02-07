@@ -11,47 +11,33 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+This file serves as a guide to the following Shiny Dashboard: https://sbdiaz.shinyapps.io/SprintNLP/
+
+The assignment consisted on downloading tweets related to Sprint company and to perform an analysis to draw insights on their social media strategy. Our conclusions are detailed below.
+
 ## Topic Density Distribution
 
-Control slider allows the user to select the number of topics for the Topic Density Distribution, based on the selection 
+In this tab, there is a control slider which allows the user to select the number of topics for the Topic Density Distribution. Between 2 to 10 topics can be displayed, revealing a pattern of customers using social media to ask for help or to express their insatisfaction with the service provided by Sprint.
 
-* The graph is modified
-
-* User Information like No. of User tweeting about the topic, AccountAge and Average number of tweets and retweets
-
-* Word cloud displays the user description in their own words
-
+Below the density distribution, a wordcloud built from customers' descriptions (their twitter bios) is displayed. The words are also grouped by topics, as each color corresponds to a different topic.
 
 ## Sentiment Analysis
 
-* Provides the positive and negative sentiments of tweets based on Bing Dictionary
-
-* Words contribution has been plotted in the second graph
-
-* The slider allows the user to select the number of popular hashtags based on which the graph is modified
-
-* Text box is provided to enter the words or hashtags of a tweet to be selected
+The top left chart shows the most commonly used hashtags, with the amount of positive and negative classifications based on Bing Dictionary. The right chart shows the words that most contributed to these sentiments. Hashtags are mostly associated to positive sentiments, especially hashtags such as #mysprintrewards, which may correspond to a marketing campaign. However, #Sprint has a stronger negative contribution, with strong language being possible evidence of frustration at customer service, which may easily affect brand perception. To see the hashtag information with more detail, the possibility to select hashtags individually is provided in the text box. Additionally, in the bottom right chart, Bing sentiment is displayed in more granularity by crossing it with NRC dictionary. Engagement seems to be higher with positive tweets, moreso for #mysprintrewards, which suggests potential to counteract negative brand perception.
 
 ## Word Correlation
 
-* Provides the aggregation of retweets against hashtag
-
-* Topic density distribution against time
-
-* Slider allows the user to select the number of words
-
-* A date selection is avaialble to select the date rane for the tweets
+This tab further proves the preliminary conclusions from the previous tab, as again there is a direct relation between engagement and positive sentiment. When sentiment and engagement are displayed on a timeline, holidays such as Christmas show higher engagement. At the same time, strong dips in sentiment also show high engagement. It is highly likely that these strong reactions correspond to particular news events, such as service outages that occurred throughout January.
 
 ## Map of USA
 
-Dropdown is provided to slect a state from USA, this modifies 
-
-* The Map on the right 
-* The Dendogram below
+This tab shows sentiment average scores with Afinn dictionary per state. The bottom chart is also responsive to state selection, with color representing different NRC dictionary classifications. Overall, the scores are relatively stable, with a tendency towards positive sentiments. This, besides from reward campaigns, is also explained because Sprint publishes job offers on their social media, which results in NRC classifying these interactions under "trust".
 
 ## Token frequency
 
-Slider allows the user to select the number of words, this modifies 
+The final tab shows the most common words and how often they occur. This tab is useful for getting an idea of what customers are looking for when contacting Sprint through social media. Words such as mobile, phone and store suggest an inclination to use social media as a quick way to solve questions.
 
-* Frequency of words graph
-* The word cloud 
+
+## Further steps
+
+This analysis has been mostly exploratory, focusing mainly on customer behaviour. It is suggested to cross this information with marketing campaign metrics to see how effective social media is, along with expanding NLP to news articles to understand how certain events impact customer reactions to Sprint and overall brand perception.
