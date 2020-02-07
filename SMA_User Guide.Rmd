@@ -1,0 +1,57 @@
+---
+title: "Sprint Social Media Analytics User Guide"
+author: "Manoj Kumar Purushothaman, Edward Vrijghem, Stephanie Beyer Diaz"
+date: "Feb 06 2020"
+output: html_document
+---
+
+
+![](Sprint.PNG)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Topic Density Distribution
+
+Control slider allows the user to select the number of topics for the Topic Density Distribution, based on the selection 
+
+* The graph is modified
+
+* User Information like No. of User tweeting about the topic, AccountAge and Average number of tweets and retweets
+
+* Word cloud displays the user description in their own words
+
+
+## Sentiment Analysis
+
+* Provides the positive and negative sentiments of tweets based on Bing Dictionary
+
+* Words contribution has been plotted in the second graph
+
+* The slider allows the user to select the number of popular hashtags based on which the graph is modified
+
+* Text box is provided to enter the words or hashtags of a tweet to be selected
+
+## Word Correlation
+
+* Provides the aggregation of retweets against hashtag
+
+* Topic density distribution against time
+
+* Slider allows the user to select the number of words
+
+* A date selection is avaialble to select the date rane for the tweets
+
+## Map of USA
+
+Dropdown is provided to slect a state from USA, this modifies 
+
+* The Map on the right 
+* The Dendogram below
+
+## Token frequency
+
+Slider allows the user to select the number of words, this modifies 
+
+* Frequency of words graph
+* The word cloud 
